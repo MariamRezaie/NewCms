@@ -1,0 +1,133 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+background: url(contant.png);
+}
+h1 {
+   font-family: Helvetica, Geneva, Arial, sans-serif;
+   font-size: strong;
+   color: #cdcf19;
+   text-align: left;
+  height:100px;
+}
+
+p{
+ font-size: strong;
+   color: #660066;
+   }
+ 
+.pages{
+
+#newmenu ul li{
+font-family: Helvetica, Geneva, Arial, sans-serif;
+   font-size: strong;
+    display:inline;
+    padding:0;
+    font-size: 21px;
+    left:55%;
+   top:8px;
+   text-align: center;
+   margin:0 0 0 1px;
+   }
+        table {
+border-collapse: collapse;
+width: 1334px;
+height: 40px;
+float:center;
+}
+table tr td {
+padding: 5px;
+vertical-align: top;
+}
+
+.list_description {
+width: 60%;
+dl {
+margin: 0;
+}
+dt {
+color: #244;
+font-weight: bold;
+font-size: larger;
+}
+dd {
+margin: 0;
+}
+        }
+.list_actions {
+font-size: x-small;
+text-align: right;
+padding-left: 1em;
+}
+.list_line_even {
+background: #ff99ff;
+}
+.list_line_odd {
+background: #ff99ff;
+}
+.table2{
+           
+border-collapse: collapse;
+width: 300px;
+height: 200px;
+float:center;
+background: #d3ba0e;
+}
+.blue {
+background: #e6d495;
+}
+.table3{
+     border:26 px;      
+
+width: 1000px;
+height: 200px;
+float:center;
+
+}
+.tablea{
+     border:26 px;      
+background: #e6d495;
+width: 1000px;
+height: 200px;
+align:center;
+
+}
+.image {
+width:60px;
+height: 65px;
+}
+.tableb{
+     border:26 px;      
+background: #ccffcc;
+width: 1400px;
+height: 200px;
+align: center;
+
+}
+#header {
+background: #3186a6;
+padding-top: 10px;
+padding-bottom: 10px;
+border-bottom: 2px solid;
+font: small-caps 40px/40px "Times New Roman", serif;
+color: #9cd3e7;
+text-align: center;
+}
+#header img {
+float: left;
+}
+#back{
+background: #9cd3e7;
+}
+
+#footer {
+background: #3186a6;
+
+font: small-caps 40px/40px "Times New Roman", serif;
+color: #9cd3e7;
+}
+#menu{
+background: #94e0b9}
+}

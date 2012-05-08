@@ -1,0 +1,61 @@
+<body id="back">
+<div id="header">
+<%= image_tag("rails.png") %>
+<%= "Agile" %>
+</div>
+
+<table id="menu">
+  
+<tr >
+  <% @pages.each do |page| %>
+    <th><%= link_to page.title, page %></th>
+   
+  <% end %>
+ </tr></table>
+<table >
+<tr>
+
+ <table class="<%= cycle('table2') %>" >
+<tr><td> <%= link_to 'New Page', new_page_path %></td></tr>
+ <td ><h3 text-align: center>this is list of page</h3></td><br/>
+<% @pages.each do |page| %>
+  <tr class="<%= cycle('blue') %>">
+  <td><%= truncate(strip_tags(page.title),
+:length => 10)%>
+    </td>
+   
+    <td><%= link_to 'Show', page %></td>
+    <td><%= link_to 'Edit', edit_page_path(page) %></td>
+    <td><%= link_to 'Delete', page, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+<tr><td><h4>In this cms you can create ,show and edit pages</h4></td></tr>
+</table>
+</tr>
+<tr>
+<h2> If you want know about our website, click on read more </h2>
+
+<table  class="<%= cycle('tablea') %>" >
+<tr>
+<td>
+
+ <table class="<%= cycle('table3') %>" >
+
+
+ <td ><% @pages.each do |page| %><%= image_tag( page.permalink	, :class => 'image') %>	<%= page.body%>
+
+  
+    <%= link_to ' read more', page %></td><br/>
+   
+<% end %>
+
+</table>
+
+</td></tr></table>
+</tr>
+<br />
+</table>
+
+
+
+</body>
